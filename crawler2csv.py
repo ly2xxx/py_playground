@@ -31,10 +31,11 @@ while len(urls) != 0:
     product = {}
     product["url"] = current_url
     product["image"] = soup.select_one(".wp-post-image")["src"]
-    product["name"] = soup.select_one(".product_title").text()
+    # product["name"] = soup.select_one(".product_title").text()
     product["price"] = soup.select_one(".price")
 
     products.append(product)
+    break
 
 # initialize the CSV output file
 with open('products.csv', 'w') as csv_file:
