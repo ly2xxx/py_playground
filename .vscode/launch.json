@@ -12,6 +12,13 @@
             "console": "integratedTerminal"
         },
         {
+            "name": "Python Debugger: crawlamazon2csv",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "crawlamazon2csv.py",
+            "console": "integratedTerminal"
+        },
+        {
             "name": "Python:Streamlit",
             "type": "debugpy",
             "request": "launch",
