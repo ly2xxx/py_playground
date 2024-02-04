@@ -1,0 +1,4 @@
+requests==2.31.0
+bs4==0.0.2
+#scrapy startproject scrapy_crawler
+scrapy==2.11.0
