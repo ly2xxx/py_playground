@@ -96,3 +96,15 @@ if __name__ == '__main__':
 	print("Availability =", get_availability(soup))
 	print()
 	print()
+
+	#https://www.octoparse.com/blog/how-to-scrape-amazon-data-using-python
+	headers2 = {
+	"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"}
+	url2 = "https://www.amazon.co.uk/s?k=ddr4+ram+32gb&i=warehouse-deals&crid=25G6AA3ZT15WG&sprefix=ddr4+ram+32gb%2Cwarehouse-deals%2C243&ref=nb_sb_noss_1"
+	response2 = requests.get(url2, headers=headers2)
+
+	soup2 = BeautifulSoup(response2.content, "html.parser")
+
+	titles = [title.get_text() for title in soup2.find_all("h2", class_="a-size-mini a-spacing-none a-color-base s-line-clamp-2")]
+
+	print(titles)
