@@ -80,7 +80,7 @@ if __name__ == '__main__':
 	            'Accept-Language': 'en-US, en;q=0.5'})
 
 	# The webpage URL
-	URL = "https://www.amazon.co.uk/Netac-3200MHZ-Desktop-Memory-XPM2-0-D4-II/dp/B0BC12957X/ref=sr_1_1?crid=2OPZW6GTCC5QG&keywords=ddr4+ram+32gb&m=A2OAJ7377F756P&qid=1707085185&s=warehouse-deals&sprefix=ddr4%2Cwarehouse-deals%2C127&sr=8-1"
+	URL = "https://www.amazon.co.uk/dp/B08688GFPD/"
 
 	# HTTP Request
 	webpage = requests.get(URL, headers=HEADERS)
@@ -105,6 +105,12 @@ if __name__ == '__main__':
 
 	soup2 = BeautifulSoup(response2.content, "html.parser")
 
-	titles = [title.get_text() for title in soup2.find_all("h2", class_="a-size-mini a-spacing-none a-color-base s-line-clamp-2")]
+	titles = soup2.find_all("h2", class_="a-size-mini a-spacing-none a-color-base s-line-clamp-2")
+	for title in titles:
+		print (title.get_text())
+		href = title.find('a', attrs={'class':'a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal'})
+		print (href.get("href"))
 
-	print(titles)
+ 	# titles = [title.get_text() for title in titles]
+
+	# print(titles)
