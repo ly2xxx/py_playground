@@ -100,7 +100,7 @@ if __name__ == '__main__':
 	#https://www.octoparse.com/blog/how-to-scrape-amazon-data-using-python
 	headers2 = {
 	"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"}
-	url2 = "https://www.amazon.co.uk/s?k=ddr4+ram+32gb&i=warehouse-deals&crid=25G6AA3ZT15WG&sprefix=ddr4+ram+32gb%2Cwarehouse-deals%2C243&ref=nb_sb_noss_1"
+	url2 = "https://www.amazon.co.uk/s?k=ddr4+ram+32gb&i=warehouse-deals&page=2"
 	response2 = requests.get(url2, headers=headers2)
 
 	soup2 = BeautifulSoup(response2.content, "html.parser")
