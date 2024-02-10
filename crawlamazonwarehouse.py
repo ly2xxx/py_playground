@@ -124,6 +124,7 @@ if __name__ == '__main__':
 
 	#https://www.octoparse.com/blog/how-to-scrape-amazon-data-using-python
 	#c:/code/py_playground/.venv/Scripts/python.exe c:/code/py_playground/crawlamazonwarehouse.py >> results\golf.txt
+	#.venv/Scripts/python.exe crawlamazonwarehouse.py >> results\gpu.txt
 	headers2 = {
 	"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"}
 	domain_url = "https://www.amazon.co.uk"
