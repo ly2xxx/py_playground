@@ -31,8 +31,9 @@ def get_discount_ratio(soup):
 	try:
 		new_price = soup.find("span", attrs={'class':'a-offscreen'}).string.strip()
 		print("New = ", new_price)
-		prices = soup.select('div.a-box-inner span.a-offscreen')
-		used_price = prices[0].get_text().strip()
+		# prices = soup.select('div.a-box-inner span.a-offscreen')
+		# used_price = prices[0].get_text().strip()
+		used_price = soup.find("div",attrs={'data-csa-c-buying-option-type':'USED'}).string.strip()
 		print("Used = ", used_price)
 		price = float(used_price[1:]) / float(new_price[1:])
 		if (price < 0.6):
@@ -110,7 +111,7 @@ if __name__ == '__main__':
 	"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"}
 	domain_url = "https://www.amazon.co.uk"
 	base_url = "https://www.amazon.co.uk/s?k=ddr4+ram+32gb&i=warehouse-deals&page="
-	for page_number in range(1, 101):
+	for page_number in range(10, 101):
 		# Create the new URL by replacing the page number
 		page_url = base_url + str(page_number)
 		print(page_url)
@@ -119,7 +120,7 @@ if __name__ == '__main__':
 		soup2 = BeautifulSoup(response2.content, "html.parser")
 
 		titles = soup2.find_all("h2", class_="a-size-mini a-spacing-none a-color-base s-line-clamp-2")
-		if titles.count==0:
+		if len(titles)==0:
 			print("===THE END===")
 			break
 		for title in titles:

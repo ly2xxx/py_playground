@@ -12,10 +12,10 @@
             "console": "integratedTerminal"
         },
         {
-            "name": "Python Debugger: crawlamazon2csv",
+            "name": "Python Debugger: crawlamazonwarehouse",
             "type": "debugpy",
             "request": "launch",
-            "program": "crawlamazon2csv.py",
+            "program": "crawlamazonwarehouse.py",
             "console": "integratedTerminal"
         },
         {
