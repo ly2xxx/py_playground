@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup
 import requests
+import time
 
 # Function to extract Product Title
 def get_title(soup):
@@ -127,8 +128,9 @@ if __name__ == '__main__':
 	"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"}
 	domain_url = "https://www.amazon.co.uk"
 	# base_url = "https://www.amazon.co.uk/s?k=ddr4+ram+32gb&i=warehouse-deals&page="
-	base_url = "https://www.amazon.co.uk/s?k=golf&i=warehouse-deals&page="
+	base_url = "https://www.amazon.co.uk/s?k=gpu&i=warehouse-deals&page="
 	for page_number in range(1, 101):
+		time.sleep(2)
 		# Create the new URL by replacing the page number
 		page_url = base_url + str(page_number)
 		print(page_url)
@@ -155,7 +157,7 @@ if __name__ == '__main__':
 			print("Price discount =", discount)
 			if (discount < 0.6):
 				print("BARGAIN!!!")
-
+			time.sleep(1)
 			print()
 			print()
 			print()
