@@ -1,6 +1,15 @@
 from bs4 import BeautifulSoup
 import requests
 import time
+import random 
+ 
+user_agents = [ 
+	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36', 
+	'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36', 
+	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36', 
+	'Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148', 
+	'Mozilla/5.0 (Linux; Android 11; SM-G960U) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.72 Mobile Safari/537.36' 
+] 
 
 # Function to extract Product Title
 def get_title(soup):
@@ -95,8 +104,9 @@ def get_availability(soup):
 def print_product_info(url):
 	print(url)
 	# Headers for request
+	#"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"
 	HEADERS = ( {
-	"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"})
+	"User-Agent": random.choice(user_agents)})
 
 	# The webpage URL
 	# URL = "https://www.amazon.co.uk/dp/B08688GFPD/"
@@ -125,12 +135,13 @@ if __name__ == '__main__':
 	#https://www.octoparse.com/blog/how-to-scrape-amazon-data-using-python
 	#c:/code/py_playground/.venv/Scripts/python.exe c:/code/py_playground/crawlamazonwarehouse.py >> results\golf.txt
 	#.venv/Scripts/python.exe crawlamazonwarehouse.py >> results\gpu.txt
+	#https://www.zenrows.com/blog/stealth-web-scraping-in-python-avoid-blocking-like-a-ninja#full-set-of-headers
 	headers2 = {
-	"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"}
+	"User-Agent": random.choice(user_agents)}
 	domain_url = "https://www.amazon.co.uk"
 	# base_url = "https://www.amazon.co.uk/s?k=ddr4+ram+32gb&i=warehouse-deals&page="
-	base_url = "https://www.amazon.co.uk/s?k=golf&i=warehouse-deals&page="
-	for page_number in range(1, 101):
+	base_url = "https://www.amazon.co.uk/s?k=swim+goggle&i=warehouse-deals&page="
+	for page_number in range(3, 101):
 		time.sleep(2)
 		# Create the new URL by replacing the page number
 		page_url = base_url + str(page_number)
@@ -146,7 +157,10 @@ if __name__ == '__main__':
 		for title in titles:
 			print (title.get_text())
 			item = title.find('a', attrs={'class':'a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal'})
-			href = item.get("href")
+			try:
+				href = item.get("href")
+			except Exception as e:
+				continue
 			# print (href)
 			# Split the string using '/'
 			parts = href.split('/')
