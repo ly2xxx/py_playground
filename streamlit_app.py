@@ -133,11 +133,11 @@ def print_product_info(url):
 
 # if __name__ == '__main__':
 
-k = st.text_input("Enter search term")
+k = st.text_input("")
 
 if k:
 
-	base_url = f"https://www.amazon.co.uk/s?k={k}&i=warehouse-deals&page="
+	base_url = f"{k}"
 
 	#https://www.octoparse.com/blog/how-to-scrape-amazon-data-using-python
 	#c:/code/py_playground/.venv/Scripts/python.exe c:/code/py_playground/crawlamazonwarehouse.py >> results\golf.txt
