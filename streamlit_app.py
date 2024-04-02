@@ -148,7 +148,7 @@ if k:
 	domain_url = "https://www.amazon.co.uk"
 	# base_url = "https://www.amazon.co.uk/s?k=ddr4+ram+32gb&i=warehouse-deals&page="
 	# base_url = "https://www.amazon.co.uk/s?k=swim+goggle&i=warehouse-deals&page="
-	for page_number in range(1, 101):
+	for page_number in range(1, 20):
 		time.sleep(2)
 		# Create the new URL by replacing the page number
 		page_url = base_url + str(page_number)
