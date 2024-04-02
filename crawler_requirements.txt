@@ -1,5 +1,0 @@
-requests==2.31.0
-bs4==0.0.2
-#scrapy startproject scrapy_crawler
-#https://docs.scrapy.org/en/latest/topics/spiders.html
-scrapy==2.11.0
