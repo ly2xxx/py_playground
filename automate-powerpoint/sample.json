@@ -1,0 +1,22 @@
+[
+    {
+        "Department": "IT",
+        "CTO Technology Lead": "John Smith",
+        "Application Count": 10
+    },
+    {
+        "Department": "IT",
+        "CTO Technology Lead": "Jane Doe",
+        "Application Count": 15
+    },
+    {
+        "Department": "Finance",
+        "CTO Technology Lead": "John Smith",
+        "Application Count": 5
+    },
+    {
+        "Department": "Finance",
+        "CTO Technology Lead": "Jane Doe",
+        "Application Count": 8
+    }
+]

@@ -1,0 +1,32 @@
+{
+    "sections": [
+        {
+            "header": "Objective:",
+            "header_font_size": 8,
+            "content": "All IT Applications to have an active owner from the Owning Transaction Cycle i.e. owner is an existing employee and not on long term leave. The following statistics indicate the number of applications where the product owner is inactive. These need to be updated and assigned to active users.",
+            "content_font_size": 7
+        },
+        {
+            "header": "How to Fix:",
+            "header_font_size": 8,
+            "content": "MyIT/ - ",
+            "hyperlink": {
+                "text": "Request Update to a Business Application",
+                "url": "https://your-servicenow-url.com/update-application"
+            },
+            "content_suffix": " (Nominated representatives can be given access to make direct updates through the ServiceNow User Interface, requests to be raised with Mryutunajy Pangirahi or Andy Harrison)",
+            "content_font_size": 7
+        },
+        {
+            "header": "Detailed Report:",
+            "header_font_size": 8,
+            "content": "Click the ",
+            "hyperlink": {
+                "text": "link",
+                "url": "https://google.com"
+            },
+            "content_suffix": " to view both the summary and detailed data.",
+            "content_font_size": 7
+        }
+    ]
+}
