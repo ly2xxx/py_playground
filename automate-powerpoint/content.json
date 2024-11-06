@@ -2,7 +2,7 @@
     "sections": [
         {
             "header": "Objective:",
-            "header_font_size": 8,
+            "header_font_size": 9,
             "content": "All IT Applications to have an active owner from the Owning Transaction Cycle i.e. owner is an existing employee and not on long term leave. The following statistics indicate the number of applications where the product owner is inactive. These need to be updated and assigned to active users.",
             "content_font_size": 7
         },
