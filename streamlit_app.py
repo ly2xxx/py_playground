@@ -133,7 +133,7 @@ def print_product_info(url):
 
 # if __name__ == '__main__':
 
-k = st.text_input("")
+k = st.text_input("Enter Amazon search URL")
 
 if k:
 
