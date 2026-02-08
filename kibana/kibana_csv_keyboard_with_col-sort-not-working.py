@@ -65,73 +65,97 @@ def download_csv_via_keyboard():
         except Exception as e:
             print(f"⚠️ Could not click Services link: {e}")
         
-        # ==================== STEP 1: SORT BY COLUMN ====================
-        sort_column = "Cluster IP"
-        print(f"\n🔽 STEP 1: Sorting by '{sort_column}' (descending)...")
+        # --- Sorting Logic ---
+        sort_column = "Created"  # Default sort column
+        sort_order = "descending" # Default sort order
+        
+        # --- Sorting Logic ---
+        sort_column = "Created"
+        sort_order = "descending"
+        
+        # --- Sorting Logic ---
+        sort_column = "Created"
+        
+        print(f"\n🔽 Attempting to sort by '{sort_column}' (descending) via column menu...")
         
         try:
-            # Find the panel "Services Informations [Metrics Kubernetes]" first
-            panel_title = page.locator('span, div, h2, h3').filter(has_text="Services Informations [Metrics Kubernetes]").first
+            # 1. Locate the specific panel "Services Informations [Metrics Kubernetes]"
+            # Use a robust text locator for the panel title
+            panel_title = page.locator('h1, h2, h3, h4, span, div').filter(has_text="Services Informations [Metrics Kubernetes]").first
+            
             if panel_title.count() > 0:
-                print("   Found panel 'Services Informations [Metrics Kubernetes]'")
+                print("   Found panel title 'Services Informations [Metrics Kubernetes]'")
                 panel_title.scroll_into_view_if_needed()
-                time.sleep(1)
-            
-            # Find the column header by text
-            # The header cell contains the column name and a kebab menu button
-            # We need to hover over it to make the 3-dots button visible
-            header_cell = page.locator(f'th:has-text("{sort_column}"), div[role="columnheader"]:has-text("{sort_column}")').first
-            
-            if header_cell.count() > 0 and header_cell.is_visible():
-                print(f"   Found '{sort_column}' header cell.")
-                header_cell.scroll_into_view_if_needed()
-                header_cell.hover()  # This should reveal the kebab menu
-                time.sleep(0.5)
                 
-                # Look for the 3-dots button within or near the header
-                # Usually it's a button with aria-label mentioning column options or actions
-                # Or it might just be the last button in the header cell
-                menu_button = header_cell.locator('button').last
+                # The table should be within the same container or nearby.
+                # We'll look for the table header "Created" globally first, but maybe we can scope it?
+                # Actually, filtering for the specific header "Created" inside a table context is safest.
                 
-                if menu_button.count() > 0:
-                    print("   Found 3-dots menu button. Clicking...")
-                    menu_button.click()
-                    time.sleep(1)
+                # Find the TH containing "Created"
+                # In Kibana EUI, the 3-dots button is often inside the TH.
+                header_cell = page.locator("th").filter(has_text=sort_column).first
+                
+                if header_cell.count() > 0 and header_cell.is_visible():
+                    print(f"   Found '{sort_column}' header cell.")
+                    header_cell.scroll_into_view_if_needed()
+                    header_cell.hover() # Hover might reveal the button
                     
-                    # Find "Sort descending" option in the popup menu
-                    sort_desc = page.locator('button, span').filter(has_text="Sort descending").first
+                    # Look for the 3-dots button inside this header
+                    # It often has an aria-label like "Column actions" or "Sorted by..." or just a class with "eui...".
+                    # We'll try to find a button inside.
+                    menu_button = header_cell.locator("button").last # Usually the last button is the menu (first might be sort toggle)
                     
-                    if sort_desc.count() > 0 and sort_desc.is_visible():
-                        print("   Found 'Sort descending'. Clicking...")
-                        sort_desc.click()
-                        time.sleep(2)  # Wait for table to re-sort
-                        print("   ✅ Sorting complete!")
+                    if menu_button.count() > 0:
+                        print("   Found menu button in header. Clicking...")
+                        menu_button.click()
+                        time.sleep(1) # Wait for menu to pop up
+                        
+                        # Look for "Sort descending" in the menu
+                        sort_desc_option = page.locator('button, span, div').filter(has_text="Sort descending").first
+                        
+                        if sort_desc_option.count() > 0 and sort_desc_option.is_visible():
+                            print("   Found 'Sort descending' option. Clicking...")
+                            sort_desc_option.click()
+                            time.sleep(2) # Wait for sort to apply
+                            print("✅ Sorting triggered successfully.")
+                        else:
+                             print("⚠️ 'Sort descending' option not found in menu.")
+                             # Maybe it's already sorted? check aria-checked?
+                             # Or maybe the text is slightly different.
+                             # Fallback: Print menu items
+                             print("   (Menu items found: " + str(page.locator(".euiContextMenuItem").all_inner_texts()) + ")")
+                             page.keyboard.press("Escape") # Close menu
                     else:
-                        print("   ⚠️ 'Sort descending' not found. Menu items:")
-                        # Debug: print all menu items
-                        menu_items = page.locator('[role="menuitem"], .euiContextMenuItem')
-                        for i in range(min(menu_items.count(), 10)):
-                            print(f"      - {menu_items.nth(i).inner_text().strip()}")
-                        page.keyboard.press("Escape")
+                        print("⚠️ Could not find menu button inside header cell.")
                 else:
-                    print("   ⚠️ No button found in header cell.")
-            else:
-                print(f"   ⚠️ Could not find '{sort_column}' header cell.")
-                # Debug: list all visible headers
-                print("   🔍 Listing all visible th elements:")
-                ths = page.locator("th")
-                for i in range(min(ths.count(), 10)):
+                    print(f"⚠️ Could not find visible '{sort_column}' table header.")
+                    print("   🔍 Debugging: Dumping HTML of the panel's table area...")
                     try:
-                        if ths.nth(i).is_visible():
-                            print(f"      - {ths.nth(i).inner_text().strip()}")
-                    except:
-                        pass
+                        # Find the parent container of the title, then look for a table
+                        # This is a bit rough, but let's try to get the table HTML
+                        panel_container = panel_title.locator("xpath=../../..") # Go up a few levels
+                        table = panel_container.locator("table")
+                        if table.count() > 0:
+                            print(f"   Table HTML (first 500 chars): {table.first.inner_html()[:500]}")
+                        else:
+                            print("   No <table> tag found nearby. Checking for div-based table...")
+                            # Maybe it's divs
+                            headers = panel_title.locator("xpath=../../..").locator('[role="columnheader"]')
+                            print(f"   Found {headers.count()} div-based headers.")
+                            for i in range(min(headers.count(), 5)):
+                                print(f"   - Header {i}: {headers.nth(i).inner_text()}")
+                    except Exception as ex:
+                        print(f"   (Error dumping debug info: {ex})")
+            else:
+                 print("⚠️ Could not find panel 'Services Informations [Metrics Kubernetes]'.")
+        
         except Exception as e:
-            print(f"   ⚠️ Error during sorting: {e}")
-        
-        # ==================== STEP 2: DOWNLOAD CSV ====================
-        print("\n📥 STEP 2: Finding panel menu to Download CSV...")
-        
+            print(f"⚠️ Error during sorting: {e}")
+        # ---------------------
+            
+        # ---------------------
+        # ---------------------
+            
         # Now try keyboard shortcuts to access Inspector
         print("\n🎹 Trying keyboard shortcuts to reach panel menu...")
         
