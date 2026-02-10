@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% from "macros.html" import button, card, alert %}
+
+{% block title %}{{ page_title }} - Demo{% endblock %}
+
+{% block extra_css %}
+.btn { display: inline-block; padding: 8px 16px; border-radius: 4px; text-decoration: none; color: white; margin-right:
+5px; }
+.btn-primary { background-color: #007bff; }
+.btn-secondary { background-color: #6c757d; }
+.btn-danger { background-color: #dc3545; }
+
+.card { border: 1px solid #ddd; padding: 15px; border-radius: 4px; margin-bottom: 15px; background: #f9f9f9; }
+.card h3 { margin-top: 0; }
+
+.alert { padding: 10px; border-radius: 4px; margin-bottom: 15px; border-left: 4px solid; }
+.alert-info { background-color: #e7f3fe; border-color: #2196F3; color: #0c5460; }
+.alert-warning { background-color: #ffffcc; border-color: #ffeb3b; color: #856404; }
+.alert-success { background-color: #d4edda; border-color: #28a745; color: #155724; }
+{% endblock %}
+
+{% block header %}
+{{ page_title }}
+{% endblock %}
+
+{% block content %}
+{{ alert("Welcome to the advanced template demo!", "info") }}
+
+<h2>Interactive Components</h2>
+<p>Here are some buttons generated with macros:</p>
+<div style="margin-bottom: 20px;">
+    {{ button("Click Me (Primary)", "#", "primary") }}
+    {{ button("Cancel (Secondary)", "#", "secondary") }}
+    {{ button("Delete (Danger)", "#", "danger") }}
+</div>
+
+<h2>Dynamic Cards</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px;">
+    {% for item in items %}
+    {{ card(item.title, item.description) }}
+    {% endfor %}
+</div>
+
+{% if show_promo %}
+<hr>
+{{ alert("Special promotion active! 50% off all items.", "success") }}
+{% endif %}
+{% endblock %}

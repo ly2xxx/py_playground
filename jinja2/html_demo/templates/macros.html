@@ -1,0 +1,16 @@
+{% macro button(text, url='#', type='primary') %}
+<a href="{{ url }}" class="btn btn-{{ type }}">{{ text }}</a>
+{% endmacro %}
+
+{% macro card(title, content) %}
+<div class="card">
+    <h3>{{ title }}</h3>
+    <p>{{ content }}</p>
+</div>
+{% endmacro %}
+
+{% macro alert(message, type='info') %}
+<div class="alert alert-{{ type }}">
+    <strong>{{ type|title }}:</strong> {{ message }}
+</div>
+{% endmacro %}

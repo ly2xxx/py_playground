@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jinja2 HTML Demo - Demo</title>
+    <style>
+        body {
+            font-family: monospace;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            border-bottom: 2px solid #ddd;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 0.8em;
+            color: #666;
+            text-align: center;
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+        }
+
+        .nav {
+            margin-bottom: 20px;
+        }
+
+        .nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .nav a:hover {
+            color: #007bff;
+        }
+
+            {
+            % block extra_css %
+        }
+
+            {
+            % endblock %
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>
+Jinja2 HTML Demo
+</h1>
+            <nav class="nav">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            
+
+<div class="alert alert-info">
+    <strong>Info:</strong> Welcome to the advanced template demo!
+</div>
+
+
+<h2>Interactive Components</h2>
+<p>Here are some buttons generated with macros:</p>
+<div style="margin-bottom: 20px;">
+    
+<a href="#" class="btn btn-primary">Click Me (Primary)</a>
+
+    
+<a href="#" class="btn btn-secondary">Cancel (Secondary)</a>
+
+    
+<a href="#" class="btn btn-danger">Delete (Danger)</a>
+
+</div>
+
+<h2>Dynamic Cards</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px;">
+    
+    
+<div class="card">
+    <h3>Feature A</h3>
+    <p>This is a cool feature that does amazing things.</p>
+</div>
+
+    
+    
+<div class="card">
+    <h3>Feature B</h3>
+    <p>Another feature to help you be more productive.</p>
+</div>
+
+    
+    
+<div class="card">
+    <h3>Feature C</h3>
+    <p>Final feature in the list, very robust.</p>
+</div>
+
+    
+</div>
+
+
+<hr>
+
+<div class="alert alert-success">
+    <strong>Success:</strong> Special promotion active! 50% off all items.
+</div>
+
+
+
+        </main>
+
+        <footer>
+            <p>&copy; 2026 My Awesome Company</p>
+        </footer>
+    </div>
+</body>
+
+</html>
