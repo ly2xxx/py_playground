@@ -21,9 +21,7 @@ This project demonstrates how unsupervised ML can automatically discover hidden 
 ### 1. Install Dependencies
 
 ```bash
-cd support-ticket-clustering
-python -m venv .venv
-.\.venv\Scripts\activate
+cd C:\code\support-ticket-clustering
 pip install -r requirements.txt
 ```
 
