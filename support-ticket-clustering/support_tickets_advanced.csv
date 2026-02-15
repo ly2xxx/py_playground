@@ -1,0 +1,101 @@
+ticket_id,created_at,conversation
+TKT-1000,08/02/2026 09:53,Password reset not working. Link expired.
+TKT-1001,11/02/2026 15:53,Can I get a refund for unused months?
+TKT-1002,09/02/2026 10:49,Notification emails contain broken links.
+TKT-1003,10/02/2026 13:12,Subscription renewal failed. Account suspended.
+TKT-1004,10/02/2026 17:03,Notification emails contain broken links.
+TKT-1005,08/02/2026 15:00,Subscription renewal failed. Account suspended.
+TKT-1006,10/02/2026 14:39,Payment failed with error code 402. Card was charged twice. Please escalate to senior support.
+TKT-1007,12/02/2026 12:33,Can I get a refund for unused months?
+TKT-1008,10/02/2026 13:53,API response time increased by 300% this week. This has been happening for 3 days now.
+TKT-1009,10/02/2026 09:29,Want to transfer account ownership to another user.
+TKT-1010,09/02/2026 11:58,Need to upgrade my plan to Enterprise.
+TKT-1011,11/02/2026 12:46,Export function generates corrupted PDF files.
+TKT-1012,08/02/2026 16:14,Missing data from yesterday's import.
+TKT-1013,09/02/2026 12:29,Subscription renewal failed. Account suspended.
+TKT-1014,12/02/2026 09:43,Can you add export to Excel functionality?
+TKT-1015,09/02/2026 14:57,Payment failed with error code 402. Card was charged twice.
+TKT-1016,10/02/2026 13:34,Dashboard crashes when filtering by date range. Please escalate to senior support.
+TKT-1017,12/02/2026 17:52,Duplicate records appearing in my dashboard.
+TKT-1018,09/02/2026 17:35,Cannot add new payment method. System keeps rejecting my card. This has been happening for 3 days now.
+TKT-1019,10/02/2026 17:44,Please add support for SSO with Google Workspace.
+TKT-1020,12/02/2026 10:54,Two-factor authentication code never arrives.
+TKT-1021,12/02/2026 11:41,Need to upgrade my plan to Enterprise.
+TKT-1022,10/02/2026 15:27,Need invoice for last 3 months for accounting.
+TKT-1023,09/02/2026 17:13,Would like dark mode option in the app. Multiple users affected by this issue.
+TKT-1024,10/02/2026 15:19,File upload takes forever for large files.
+TKT-1025,10/02/2026 17:53,Payment processing stuck at 'pending' for 24 hours. Urgent - this is blocking our business operations.
+TKT-1026,10/02/2026 15:58,Mobile app freezes on Android 13.
+TKT-1027,11/02/2026 14:40,Cannot log into my account. Getting 'invalid credentials' error. Tried all troubleshooting steps already.
+TKT-1028,08/02/2026 17:35,Login button not responding on mobile app.
+TKT-1029,09/02/2026 09:30,Missing data from yesterday's import.
+TKT-1030,08/02/2026 16:12,Subscription renewal failed. Account suspended.
+TKT-1031,08/02/2026 15:10,Export function generates corrupted PDF files. This has been happening for 3 days now.
+TKT-1032,10/02/2026 12:51,Notification emails contain broken links.
+TKT-1033,08/02/2026 17:43,Search results showing wrong data after last update.
+TKT-1034,09/02/2026 11:42,Reports taking 10+ minutes to generate.
+TKT-1035,09/02/2026 13:48,Requesting batch upload feature for multiple files.
+TKT-1036,10/02/2026 15:48,Refund not received after 5 business days. Multiple users affected by this issue.
+TKT-1037,12/02/2026 11:09,Can I get a refund for unused months?
+TKT-1038,12/02/2026 11:40,Please add support for SSO with Google Workspace.
+TKT-1039,09/02/2026 10:05,Please add support for SSO with Google Workspace. Tried all troubleshooting steps already.
+TKT-1040,11/02/2026 13:26,Password reset not working. Link expired.
+TKT-1041,11/02/2026 17:17,Refund not received after 5 business days.
+TKT-1042,08/02/2026 14:49,Need API access for integration with our CRM.
+TKT-1043,09/02/2026 16:25,Cannot add new payment method. System keeps rejecting my card.
+TKT-1044,08/02/2026 17:35,Cannot add new payment method. System keeps rejecting my card.
+TKT-1045,12/02/2026 12:39,Payment processing stuck at 'pending' for 24 hours. Urgent - this is blocking our business operations.
+TKT-1046,11/02/2026 09:49,Payment processing stuck at 'pending' for 24 hours.
+TKT-1047,09/02/2026 16:59,Can you add export to Excel functionality?
+TKT-1048,11/02/2026 10:06,Payment failed with error code 402. Card was charged twice. Multiple users affected by this issue.
+TKT-1049,09/02/2026 12:37,Can I get a refund for unused months?
+TKT-1050,08/02/2026 14:18,Need invoice for last 3 months for accounting.
+TKT-1051,12/02/2026 14:57,Cannot log into my account. Getting 'invalid credentials' error.
+TKT-1052,08/02/2026 12:38,Mobile app freezes on Android 13. Tried all troubleshooting steps already.
+TKT-1053,09/02/2026 15:39,Login button not responding on mobile app.
+TKT-1054,08/02/2026 10:51,API response time increased by 300% this week.
+TKT-1055,10/02/2026 12:19,How do I cancel my subscription?
+TKT-1056,09/02/2026 12:07,Cannot delete old records - getting permission error.
+TKT-1057,12/02/2026 13:43,Cannot log into my account. Getting 'invalid credentials' error.
+TKT-1058,10/02/2026 15:36,Password reset not working. Link expired. Multiple users affected by this issue.
+TKT-1059,08/02/2026 15:57,Account locked after multiple login attempts. Tried all troubleshooting steps already.
+TKT-1060,08/02/2026 09:42,Password reset not working. Link expired.
+TKT-1061,11/02/2026 10:23,Need API access for integration with our CRM.
+TKT-1062,08/02/2026 16:27,Login button not responding on mobile app. Please escalate to senior support.
+TKT-1063,11/02/2026 14:19,Refund not received after 5 business days.
+TKT-1064,11/02/2026 12:31,Two-factor authentication code never arrives.
+TKT-1065,08/02/2026 16:51,Sync with third-party service stopped working. Multiple users affected by this issue.
+TKT-1066,11/02/2026 11:20,Export function generates corrupted PDF files.
+TKT-1067,11/02/2026 14:52,Password reset not working. Link expired.
+TKT-1068,08/02/2026 10:24,Cannot log into my account. Getting 'invalid credentials' error.
+TKT-1069,12/02/2026 17:12,Subscription renewal failed. Account suspended.
+TKT-1070,09/02/2026 09:28,Can I get a refund for unused months?
+TKT-1071,10/02/2026 17:48,Payment failed with error code 402. Card was charged twice.
+TKT-1072,11/02/2026 14:30,Can you add export to Excel functionality?
+TKT-1073,08/02/2026 09:53,Subscription renewal failed. Account suspended.
+TKT-1074,10/02/2026 10:25,Cannot log into my account. Getting 'invalid credentials' error.
+TKT-1075,08/02/2026 17:24,Login button not responding on mobile app.
+TKT-1076,12/02/2026 12:34,Missing data from yesterday's import. Please escalate to senior support.
+TKT-1077,12/02/2026 12:50,Search results showing wrong data after last update. This has been happening for 3 days now.
+TKT-1078,10/02/2026 15:28,Password reset not working. Link expired.
+TKT-1079,08/02/2026 13:09,Two-factor authentication code never arrives.
+TKT-1080,10/02/2026 15:27,File upload takes forever for large files.
+TKT-1081,10/02/2026 15:54,Refund not received after 5 business days.
+TKT-1082,10/02/2026 17:40,Search results showing wrong data after last update.
+TKT-1083,09/02/2026 16:04,Export function generates corrupted PDF files.
+TKT-1084,10/02/2026 16:42,How do I cancel my subscription?
+TKT-1085,08/02/2026 14:44,Please add support for SSO with Google Workspace.
+TKT-1086,11/02/2026 10:50,Refund not received after 5 business days.
+TKT-1087,11/02/2026 11:17,Payment failed with error code 402. Card was charged twice.
+TKT-1088,12/02/2026 16:51,Payment failed with error code 402. Card was charged twice. Tried all troubleshooting steps already.
+TKT-1089,12/02/2026 10:08,Login button not responding on mobile app. This has been happening for 3 days now.
+TKT-1090,12/02/2026 12:46,Requesting batch upload feature for multiple files. Tried all troubleshooting steps already.
+TKT-1091,09/02/2026 14:45,Payment failed with error code 402. Card was charged twice. Multiple users affected by this issue.
+TKT-1092,08/02/2026 09:59,Account locked after multiple login attempts. This has been happening for 3 days now.
+TKT-1093,09/02/2026 11:14,Account locked after multiple login attempts.
+TKT-1094,08/02/2026 10:20,Dashboard not loading - timeout error.
+TKT-1095,10/02/2026 13:46,Website extremely slow during peak hours. Urgent - this is blocking our business operations.
+TKT-1096,12/02/2026 10:55,How do I cancel my subscription?
+TKT-1097,10/02/2026 10:05,Login button not responding on mobile app. Please escalate to senior support.
+TKT-1098,09/02/2026 15:15,Export function generates corrupted PDF files.
+TKT-1099,08/02/2026 14:04,Dashboard crashes when filtering by date range. Multiple users affected by this issue.

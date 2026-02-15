@@ -162,6 +162,7 @@ cython_debug/
 
 #other files
 *.csv
+!support-ticket-clustering/**/*.csv
 
 #outcome
 results/

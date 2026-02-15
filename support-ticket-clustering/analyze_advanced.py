@@ -265,7 +265,7 @@ def visualize_advanced(df, embeddings_2d, clusters, topics=None):
     # Text length distribution by cluster
     df['text_length'] = df['conversation'].str.len()
     if len(valid_clusters) > 0:
-        valid_clusters.boxplot(column='text_length', by='cluster', ax=axes2[1, 1])
+        df[df['cluster'] != -1].boxplot(column='text_length', by='cluster', ax=axes2[1, 1])
         axes2[1, 1].set_title('Text Length by Cluster', fontsize=14, fontweight='bold')
         axes2[1, 1].set_xlabel('Cluster ID')
         axes2[1, 1].set_ylabel('Character Count')

@@ -58,6 +58,7 @@ TKT-1001,11/02/2026 15:53,Can I get a refund?
 ```bash
 cd C:\code\support-ticket-clustering
 python analyze_advanced.py
+(python analyze_advanced.py > error_log.txt 2>&1)
 ```
 
 **Runtime:** ~1-2 minutes for 100 tickets (depends on CPU)

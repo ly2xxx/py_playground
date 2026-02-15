@@ -1,0 +1,101 @@
+ticket_id,created_at,topic,priority,status,conversation,resolution_time_hours,customer_satisfaction,text_cluster,pca_x,pca_y,date,hour
+TKT-1000,2026-02-12 14:43:51,Login Issues,Low,Resolved,Two-factor authentication code never arrives.,26.464151126062017,3.0,3,0.9145311135588003,0.11052873677614004,2026-02-12,14
+TKT-1001,2026-02-11 14:24:51,Feature Requests,Medium,In Progress,Requesting batch upload feature for multiple files. Tried all troubleshooting steps already.,,,4,-0.037665169983468645,-0.17160290480880538,2026-02-11,14
+TKT-1002,2026-02-10 15:16:51,Data Issues,Medium,Closed,Data export incomplete - only showing 50% of records.,14.952051380333758,,5,-0.06981027446997293,-0.17138407382141002,2026-02-10,15
+TKT-1003,2026-02-11 09:49:51,Payment Problems,Medium,In Progress,Subscription renewal failed. Account suspended. Tried all troubleshooting steps already.,,,8,-0.037991440813247096,0.05054662377789359,2026-02-11,9
+TKT-1004,2026-02-12 14:11:51,Payment Problems,Low,Open,Payment failed with error code 402. Card was charged twice.,,,4,0.1135238466599511,0.11125947287945222,2026-02-12,14
+TKT-1005,2026-02-09 14:02:51,Payment Problems,Medium,Resolved,Refund not received after 5 business days.,30.554526981377613,2.0,4,-0.10422363210307191,0.07201665815491672,2026-02-09,14
+TKT-1006,2026-02-09 13:29:51,Payment Problems,Low,Open,Payment failed with error code 402. Card was charged twice. Tried all troubleshooting steps already.,,,4,0.12010000322262848,0.08957029543669168,2026-02-09,13
+TKT-1007,2026-02-11 13:30:51,Login Issues,High,Closed,Two-factor authentication code never arrives.,8.563440614532242,,3,0.9145311135588002,0.11052873677613918,2026-02-11,13
+TKT-1008,2026-02-08 11:12:51,Account Management,Low,In Progress,Want to transfer account ownership to another user.,,,0,-0.1053986002977164,0.10276894044534021,2026-02-08,11
+TKT-1009,2026-02-09 17:35:51,Account Management,High,Resolved,Need to upgrade my plan to Enterprise.,3.777211275619897,5.0,4,-0.04137952069450108,-0.048396866427980446,2026-02-09,17
+TKT-1010,2026-02-08 13:21:51,Performance Issues,High,Closed,API response time increased by 300% this week.,8.243457244470896,4.0,4,-0.028635392383636295,-0.05289277171408048,2026-02-08,13
+TKT-1011,2026-02-12 10:02:51,Login Issues,High,Resolved,Cannot log into my account. Getting 'invalid credentials' error. Urgent - this is blocking our business operations.,11.770600696278562,4.0,1,-0.26113532427176844,0.5272742248601476,2026-02-12,10
+TKT-1012,2026-02-12 11:41:51,Payment Problems,High,Resolved,Payment processing stuck at 'pending' for 24 hours. Please escalate to senior support.,8.996874667719784,5.0,4,-0.0033530857218700806,0.0426722722659041,2026-02-12,11
+TKT-1013,2026-02-08 17:36:51,Bug Reports,High,In Progress,Notification emails contain broken links. Urgent - this is blocking our business operations.,,,4,-0.12174443103182174,-0.023135967973647607,2026-02-08,17
+TKT-1014,2026-02-09 13:29:51,Bug Reports,Medium,Resolved,Export function generates corrupted PDF files.,26.89070372276929,2.0,6,-0.10924117524515324,-0.6343243136160382,2026-02-09,13
+TKT-1015,2026-02-08 12:15:51,Data Issues,Low,Closed,Cannot delete old records - getting permission error. This has been happening for 3 days now.,61.97241858569596,3.0,4,-0.15953866301821434,0.2871874460281579,2026-02-08,12
+TKT-1016,2026-02-11 11:23:51,Bug Reports,Medium,Resolved,Notification emails contain broken links.,45.94150571559778,4.0,4,-0.08692787212417175,-0.09737654181971839,2026-02-11,11
+TKT-1017,2026-02-08 17:47:51,Payment Problems,High,Closed,Cannot add new payment method. System keeps rejecting my card. Please escalate to senior support.,9.624200473981396,5.0,4,-0.004169446940236684,0.0340212039283102,2026-02-08,17
+TKT-1018,2026-02-09 13:46:51,Bug Reports,Medium,Closed,Search results showing wrong data after last update.,13.202985805459296,5.0,5,-0.04734068307770186,-0.08947403830229415,2026-02-09,13
+TKT-1019,2026-02-11 10:50:51,Payment Problems,Low,Open,Refund not received after 5 business days. Tried all troubleshooting steps already.,,,4,-0.0515741644795177,0.04302988373136836,2026-02-11,10
+TKT-1020,2026-02-11 15:02:51,Login Issues,Medium,Closed,Password reset not working. Link expired.,43.6398593049604,2.0,2,-0.06063695594579286,-0.2701516641023364,2026-02-11,15
+TKT-1021,2026-02-08 12:02:51,Data Issues,Critical,Closed,Sync with third-party service stopped working.,2.265740611463833,4.0,4,-0.03358276644574482,-0.09968659831379949,2026-02-08,12
+TKT-1022,2026-02-12 17:16:51,Performance Issues,High,Closed,Dashboard not loading - timeout error.,11.52319412041846,,4,-0.09032879256189827,0.14554848661102007,2026-02-12,17
+TKT-1023,2026-02-09 13:37:51,Account Management,Low,In Progress,Want to transfer account ownership to another user.,,,0,-0.10539860029771637,0.10276894044534023,2026-02-09,13
+TKT-1024,2026-02-12 13:50:51,Payment Problems,Low,Open,Cannot add new payment method. System keeps rejecting my card.,,,4,-0.012575327056229605,-0.022573676971605942,2026-02-12,13
+TKT-1025,2026-02-08 10:54:51,Data Issues,Medium,In Progress,Duplicate records appearing in my dashboard.,,,4,-0.05121065017287337,-0.010257051708162788,2026-02-08,10
+TKT-1026,2026-02-08 09:44:51,Login Issues,Medium,Resolved,Cannot log into my account. Getting 'invalid credentials' error.,25.97459970679748,2.0,1,-0.2784698042011728,0.6567113558826191,2026-02-08,9
+TKT-1027,2026-02-08 16:48:51,Bug Reports,High,Closed,Notification emails contain broken links. This has been happening for 3 days now.,2.4813327814877235,5.0,4,-0.1209705339411764,-0.006977097645147691,2026-02-08,16
+TKT-1028,2026-02-11 17:21:51,Login Issues,Medium,Closed,Cannot log into my account. Getting 'invalid credentials' error. Please escalate to senior support.,30.845619281184472,2.0,1,-0.2171194899267442,0.5790359186556318,2026-02-11,17
+TKT-1029,2026-02-12 13:41:51,Payment Problems,High,Resolved,Subscription renewal failed. Account suspended. Urgent - this is blocking our business operations.,6.666326222724364,5.0,4,-0.11521372125378947,0.10475915037851115,2026-02-12,13
+TKT-1030,2026-02-08 10:45:51,Feature Requests,Medium,Open,Requesting batch upload feature for multiple files.,,,4,-0.07292026471044943,-0.195182623624689,2026-02-08,10
+TKT-1031,2026-02-10 11:44:51,Login Issues,High,Resolved,Two-factor authentication code never arrives. Please escalate to senior support.,8.363380422051701,4.0,3,0.6879852203660208,0.14011313610743031,2026-02-10,11
+TKT-1032,2026-02-12 12:31:51,Bug Reports,High,Resolved,Search results showing wrong data after last update.,3.369259285200112,4.0,5,-0.04734068307770186,-0.08947403830229415,2026-02-12,12
+TKT-1033,2026-02-10 16:14:51,Bug Reports,Low,Open,Export function generates corrupted PDF files.,,,6,-0.10924117524515324,-0.6343243136160382,2026-02-10,16
+TKT-1034,2026-02-10 17:35:51,Login Issues,Low,Open,Password reset not working. Link expired.,,,2,-0.06063695594579286,-0.2701516641023364,2026-02-10,17
+TKT-1035,2026-02-12 16:13:51,Account Management,Medium,Resolved,Want to transfer account ownership to another user.,41.01360407024299,4.0,0,-0.10539860029771637,0.10276894044534023,2026-02-12,16
+TKT-1036,2026-02-08 17:00:51,Bug Reports,Low,Closed,Export function generates corrupted PDF files.,35.68507582491321,3.0,6,-0.10924117524515324,-0.6343243136160382,2026-02-08,17
+TKT-1037,2026-02-11 10:17:51,Feature Requests,Medium,In Progress,Requesting batch upload feature for multiple files.,,,4,-0.07292026471044943,-0.195182623624689,2026-02-11,10
+TKT-1038,2026-02-09 13:15:51,Payment Problems,Medium,Resolved,Refund not received after 5 business days.,16.769830756788103,,4,-0.10422363210307191,0.07201665815491663,2026-02-09,13
+TKT-1039,2026-02-11 15:52:51,Feature Requests,Low,Resolved,Please add support for SSO with Google Workspace. Multiple users affected by this issue.,86.00487843656784,2.0,4,-0.07700941895697794,-0.00781671269921058,2026-02-11,15
+TKT-1040,2026-02-11 10:44:51,Performance Issues,High,Resolved,Reports taking 10+ minutes to generate.,7.064187627426215,5.0,4,-0.0255704749237437,-0.050420056192117535,2026-02-11,10
+TKT-1041,2026-02-12 15:24:51,Login Issues,High,In Progress,Account locked after multiple login attempts. This has been happening for 3 days now.,,,4,-0.1737540364493893,0.18044734220340453,2026-02-12,15
+TKT-1042,2026-02-10 16:31:51,Account Management,Low,Resolved,Need invoice for last 3 months for accounting. Multiple users affected by this issue.,72.40272851547962,4.0,4,-0.10174633323135748,-0.015598778392049473,2026-02-10,16
+TKT-1043,2026-02-09 12:47:51,Account Management,High,Closed,How do I cancel my subscription?,10.180574739446277,5.0,8,-0.041983400896884335,-0.048910569283658306,2026-02-09,12
+TKT-1044,2026-02-12 15:40:51,Feature Requests,Medium,Resolved,Would like dark mode option in the app.,43.21425799198504,3.0,7,-0.0589770433157846,-0.0703382878730267,2026-02-12,15
+TKT-1045,2026-02-12 15:55:51,Bug Reports,Medium,Resolved,Mobile app freezes on Android 13.,43.98934439968695,4.0,7,-0.06471978370327447,-0.07728016220987508,2026-02-12,15
+TKT-1046,2026-02-10 11:57:51,Login Issues,High,In Progress,Login button not responding on mobile app.,,,7,-0.09846494933233145,-0.06538841584733807,2026-02-10,11
+TKT-1047,2026-02-12 17:36:51,Account Management,Low,Resolved,Need invoice for last 3 months for accounting. Multiple users affected by this issue.,34.92345072609997,3.0,4,-0.10174633323135748,-0.015598778392049473,2026-02-12,17
+TKT-1048,2026-02-08 10:51:51,Login Issues,Medium,Resolved,Two-factor authentication code never arrives.,23.785804665474338,5.0,3,0.9145311135588003,0.11052873677613953,2026-02-08,10
+TKT-1049,2026-02-12 09:27:51,Bug Reports,Medium,Resolved,Export function generates corrupted PDF files.,28.591468249412596,4.0,6,-0.10924117524515324,-0.6343243136160382,2026-02-12,9
+TKT-1050,2026-02-09 17:01:51,Login Issues,Medium,Closed,Cannot log into my account. Getting 'invalid credentials' error.,25.842014618331184,4.0,1,-0.2784698042011728,0.6567113558826191,2026-02-09,17
+TKT-1051,2026-02-09 17:12:51,Login Issues,Medium,Resolved,Login button not responding on mobile app. Please escalate to senior support.,24.288012594894475,4.0,7,-0.07366038835828545,-0.0007921807371783927,2026-02-09,17
+TKT-1052,2026-02-11 12:30:51,Login Issues,Low,Resolved,Cannot log into my account. Getting 'invalid credentials' error.,95.70844705335878,2.0,1,-0.2784698042011728,0.6567113558826191,2026-02-11,12
+TKT-1053,2026-02-10 11:11:51,Performance Issues,Medium,In Progress,API response time increased by 300% this week.,,,4,-0.028635392383636295,-0.05289277171408046,2026-02-10,11
+TKT-1054,2026-02-08 13:02:51,Account Management,High,Open,How do I cancel my subscription?,,,8,-0.041983400896884335,-0.048910569283658306,2026-02-08,13
+TKT-1055,2026-02-10 15:42:51,Login Issues,Medium,Closed,Cannot log into my account. Getting 'invalid credentials' error. Multiple users affected by this issue.,24.637145190126947,3.0,1,-0.26681802249309194,0.49916333282227515,2026-02-10,15
+TKT-1056,2026-02-12 11:39:51,Payment Problems,Critical,Resolved,Payment failed with error code 402. Card was charged twice.,2.449353073933432,4.0,4,0.1135238466599511,0.1112594728794523,2026-02-12,11
+TKT-1057,2026-02-12 12:00:51,Feature Requests,Medium,Resolved,Need API access for integration with our CRM.,39.47796473335244,4.0,4,-0.04051503115829133,-0.05231726292831229,2026-02-12,12
+TKT-1058,2026-02-12 17:36:51,Data Issues,Low,Resolved,Cannot delete old records - getting permission error.,99.01089742415516,2.0,4,-0.13153214297172483,0.24815815464607266,2026-02-12,17
+TKT-1059,2026-02-11 14:15:51,Feature Requests,Medium,In Progress,Need API access for integration with our CRM. Please escalate to senior support.,,,4,-0.022035060072829706,0.025369745325323635,2026-02-11,14
+TKT-1060,2026-02-12 09:52:51,Bug Reports,High,In Progress,Search results showing wrong data after last update. Multiple users affected by this issue.,,,4,-0.0890945570492873,-0.06288085984256482,2026-02-12,9
+TKT-1061,2026-02-11 16:52:51,Data Issues,Low,Resolved,Missing data from yesterday's import.,110.80430058059456,3.0,5,-0.041439544973737696,-0.08646451221450607,2026-02-11,16
+TKT-1062,2026-02-09 10:33:51,Bug Reports,Critical,In Progress,Mobile app freezes on Android 13.,,,7,-0.06471978370327447,-0.07728016220987508,2026-02-09,10
+TKT-1063,2026-02-11 16:47:51,Login Issues,Medium,Resolved,Two-factor authentication code never arrives.,23.18034324582433,4.0,3,0.9145311135588003,0.11052873677613953,2026-02-11,16
+TKT-1064,2026-02-12 17:02:51,Account Management,Medium,Resolved,Want to transfer account ownership to another user.,36.57923830127464,2.0,0,-0.10539860029771637,0.10276894044534023,2026-02-12,17
+TKT-1065,2026-02-11 09:16:51,Bug Reports,Medium,In Progress,Dashboard crashes when filtering by date range.,,,4,-0.0352599069769748,-0.037765525437655614,2026-02-11,9
+TKT-1066,2026-02-10 12:51:51,Performance Issues,Medium,Resolved,File upload takes forever for large files.,28.162282932703032,2.0,4,-0.05744047406263626,-0.24922978411399016,2026-02-10,12
+TKT-1067,2026-02-11 16:54:51,Performance Issues,Medium,Resolved,Reports taking 10+ minutes to generate.,12.04536303107791,5.0,4,-0.0255704749237437,-0.050420056192117535,2026-02-11,16
+TKT-1068,2026-02-10 16:45:51,Bug Reports,Low,In Progress,Notification emails contain broken links.,,,4,-0.08692787212417175,-0.09737654181971839,2026-02-10,16
+TKT-1069,2026-02-11 13:52:51,Login Issues,Medium,Resolved,Cannot log into my account. Getting 'invalid credentials' error. This has been happening for 3 days now.,14.995779432333352,,1,-0.28296765415352493,0.6314022030481153,2026-02-11,13
+TKT-1070,2026-02-11 11:50:51,Bug Reports,High,Resolved,Export function generates corrupted PDF files.,4.221990874007095,5.0,6,-0.10924117524515324,-0.6343243136160382,2026-02-11,11
+TKT-1071,2026-02-08 17:52:51,Bug Reports,High,Resolved,Export function generates corrupted PDF files.,2.05172454486583,5.0,6,-0.10924117524515324,-0.6343243136160382,2026-02-08,17
+TKT-1072,2026-02-08 10:14:51,Login Issues,Critical,Resolved,Login button not responding on mobile app.,3.920619341133838,,7,-0.09846494933233145,-0.06538841584733807,2026-02-08,10
+TKT-1073,2026-02-10 09:02:51,Bug Reports,Low,In Progress,Dashboard crashes when filtering by date range.,,,4,-0.0352599069769748,-0.037765525437655614,2026-02-10,9
+TKT-1074,2026-02-09 11:09:51,Login Issues,Medium,Closed,Two-factor authentication code never arrives.,35.16619128375797,4.0,3,0.9145311135588003,0.11052873677613953,2026-02-09,11
+TKT-1075,2026-02-12 10:35:51,Performance Issues,High,Open,Website extremely slow during peak hours.,,,4,-0.0221778861453517,-0.03732605293703214,2026-02-12,10
+TKT-1076,2026-02-11 13:25:51,Login Issues,Medium,In Progress,Account locked after multiple login attempts.,,,4,-0.14866843093688512,0.11940766395045972,2026-02-11,13
+TKT-1077,2026-02-09 17:19:51,Payment Problems,High,In Progress,Subscription renewal failed. Account suspended.,,,8,-0.07833690399326915,0.07438759024689695,2026-02-09,17
+TKT-1078,2026-02-09 11:39:51,Data Issues,High,Open,Sync with third-party service stopped working.,,,4,-0.03358276644574482,-0.09968659831379949,2026-02-09,11
+TKT-1079,2026-02-10 12:01:51,Login Issues,Medium,In Progress,Account locked after multiple login attempts. Please escalate to senior support.,,,4,-0.11088018669339605,0.14817131988929272,2026-02-10,12
+TKT-1080,2026-02-12 17:24:51,Login Issues,High,In Progress,Password reset not working. Link expired.,,,2,-0.06063695594579286,-0.2701516641023364,2026-02-12,17
+TKT-1081,2026-02-10 12:13:51,Login Issues,Low,Resolved,Password reset not working. Link expired. Tried all troubleshooting steps already.,44.068859355170645,3.0,2,-0.022879625689169673,-0.2251507328297093,2026-02-10,12
+TKT-1082,2026-02-09 15:47:51,Login Issues,Medium,Resolved,Password reset not working. Link expired.,22.63185083457891,5.0,2,-0.06063695594579286,-0.2701516641023364,2026-02-09,15
+TKT-1083,2026-02-08 16:43:51,Login Issues,Medium,Open,Login button not responding on mobile app.,,,7,-0.09846494933233145,-0.06538841584733807,2026-02-08,16
+TKT-1084,2026-02-09 14:44:51,Login Issues,Medium,In Progress,Cannot log into my account. Getting 'invalid credentials' error. This has been happening for 3 days now.,,,1,-0.28296765415352493,0.6314022030481153,2026-02-09,14
+TKT-1085,2026-02-08 09:50:51,Login Issues,High,Closed,Account locked after multiple login attempts. Tried all troubleshooting steps already.,3.5540338156557376,5.0,4,-0.08784658581422049,0.08113714989186484,2026-02-08,9
+TKT-1086,2026-02-08 11:45:51,Data Issues,Medium,Resolved,Missing data from yesterday's import.,32.911764107794745,2.0,5,-0.041439544973737696,-0.08646451221450607,2026-02-08,11
+TKT-1087,2026-02-08 14:02:51,Feature Requests,Medium,In Progress,Please add support for SSO with Google Workspace.,,,4,-0.029852229421158945,-0.023187590580233865,2026-02-08,14
+TKT-1088,2026-02-12 10:27:51,Login Issues,High,Open,Two-factor authentication code never arrives. Tried all troubleshooting steps already.,,,3,0.6936940819160122,0.06792394445474718,2026-02-12,10
+TKT-1089,2026-02-09 11:25:51,Payment Problems,Medium,Resolved,Refund not received after 5 business days.,19.08106242154432,4.0,4,-0.10422363210307191,0.07201665815491663,2026-02-09,11
+TKT-1090,2026-02-09 13:53:51,Account Management,Medium,Closed,How do I cancel my subscription?,37.3547146571389,2.0,8,-0.041983400896884335,-0.048910569283658306,2026-02-09,13
+TKT-1091,2026-02-11 15:07:51,Login Issues,High,Closed,Password reset not working. Link expired.,9.006408328830599,5.0,2,-0.06063695594579286,-0.2701516641023364,2026-02-11,15
+TKT-1092,2026-02-12 12:06:51,Login Issues,High,In Progress,Account locked after multiple login attempts. Urgent - this is blocking our business operations.,,,4,-0.16601970502662844,0.13598687956102007,2026-02-12,12
+TKT-1093,2026-02-11 09:16:51,Bug Reports,High,Resolved,Notification emails contain broken links.,6.615110437892989,,4,-0.08692787212417175,-0.09737654181971839,2026-02-11,9
+TKT-1094,2026-02-09 13:44:51,Bug Reports,High,Resolved,Notification emails contain broken links.,5.937539766975421,5.0,4,-0.08692787212417175,-0.09737654181971839,2026-02-09,13
+TKT-1095,2026-02-11 09:16:51,Feature Requests,High,Closed,Can you add export to Excel functionality? Multiple users affected by this issue.,2.91257098650063,4.0,4,-0.10667234824408955,-0.1111474247634509,2026-02-11,9
+TKT-1096,2026-02-08 10:03:51,Login Issues,High,Closed,Two-factor authentication code never arrives.,8.590936468016816,5.0,3,0.9145311135588003,0.11052873677613953,2026-02-08,10
+TKT-1097,2026-02-08 10:27:51,Login Issues,Medium,Open,Two-factor authentication code never arrives.,,,3,0.9145311135588003,0.11052873677613953,2026-02-08,10
+TKT-1098,2026-02-08 13:59:51,Payment Problems,Medium,In Progress,Refund not received after 5 business days. Please escalate to senior support.,,,4,-0.0744755190776562,0.11114033511000387,2026-02-08,13
+TKT-1099,2026-02-08 12:36:51,Login Issues,Medium,Resolved,Login button not responding on mobile app. Urgent - this is blocking our business operations.,36.70528568345462,3.0,7,-0.13039047182060945,0.0018155732788558729,2026-02-08,12

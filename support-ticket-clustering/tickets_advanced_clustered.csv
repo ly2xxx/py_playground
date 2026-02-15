@@ -1,0 +1,101 @@
+ticket_id,created_at,conversation,cluster,x,y,topic,date,hour,text_length
+TKT-1000,2026-02-08 09:53:00,Password reset not working. Link expired.,17,8.935785,2.2693634,3,2026-02-08,9,41
+TKT-1001,2026-02-11 15:53:00,Can I get a refund for unused months?,11,17.36156,9.032274,1,2026-02-11,15,37
+TKT-1002,2026-02-09 10:49:00,Notification emails contain broken links.,0,8.734495,1.8579769,3,2026-02-09,10,41
+TKT-1003,2026-02-10 13:12:00,Subscription renewal failed. Account suspended.,14,4.034645,5.9401455,-1,2026-02-10,13,47
+TKT-1004,2026-02-10 17:03:00,Notification emails contain broken links.,0,8.943774,1.969267,3,2026-02-10,17,41
+TKT-1005,2026-02-08 15:00:00,Subscription renewal failed. Account suspended.,14,3.986628,6.304988,-1,2026-02-08,15,47
+TKT-1006,2026-02-10 14:39:00,Payment failed with error code 402. Card was charged twice. Please escalate to senior support.,12,4.1867337,1.8382418,2,2026-02-10,14,94
+TKT-1007,2026-02-12 12:33:00,Can I get a refund for unused months?,11,17.575565,8.856118,1,2026-02-12,12,37
+TKT-1008,2026-02-10 13:53:00,API response time increased by 300% this week. This has been happening for 3 days now.,-1,11.426456,5.479248,0,2026-02-10,13,86
+TKT-1009,2026-02-10 09:29:00,Want to transfer account ownership to another user.,-1,7.760749,3.8424888,-1,2026-02-10,9,51
+TKT-1010,2026-02-09 11:58:00,Need to upgrade my plan to Enterprise.,-1,17.630636,8.228839,1,2026-02-09,11,38
+TKT-1011,2026-02-11 12:46:00,Export function generates corrupted PDF files.,2,13.652899,-4.157174,-1,2026-02-11,12,46
+TKT-1012,2026-02-08 16:14:00,Missing data from yesterday's import.,8,10.682275,6.0107503,0,2026-02-08,16,37
+TKT-1013,2026-02-09 12:29:00,Subscription renewal failed. Account suspended.,14,4.0550356,6.4000463,-1,2026-02-09,12,47
+TKT-1014,2026-02-12 09:43:00,Can you add export to Excel functionality?,1,13.739831,-4.104587,-1,2026-02-12,9,42
+TKT-1015,2026-02-09 14:57:00,Payment failed with error code 402. Card was charged twice.,12,4.246447,1.979359,2,2026-02-09,14,59
+TKT-1016,2026-02-10 13:34:00,Dashboard crashes when filtering by date range. Please escalate to senior support.,6,10.737742,5.146317,0,2026-02-10,13,82
+TKT-1017,2026-02-12 17:52:00,Duplicate records appearing in my dashboard.,-1,10.495402,5.6184793,0,2026-02-12,17,44
+TKT-1018,2026-02-09 17:35:00,Cannot add new payment method. System keeps rejecting my card. This has been happening for 3 days now.,13,4.717047,1.681072,2,2026-02-09,17,102
+TKT-1019,2026-02-10 17:44:00,Please add support for SSO with Google Workspace.,5,11.491881,2.1287847,0,2026-02-10,17,49
+TKT-1020,2026-02-12 10:54:00,Two-factor authentication code never arrives.,4,9.364457,1.967609,3,2026-02-12,10,45
+TKT-1021,2026-02-12 11:41:00,Need to upgrade my plan to Enterprise.,-1,17.78901,8.255872,1,2026-02-12,11,38
+TKT-1022,2026-02-10 15:27:00,Need invoice for last 3 months for accounting.,-1,17.543573,8.545294,1,2026-02-10,15,46
+TKT-1023,2026-02-09 17:13:00,Would like dark mode option in the app. Multiple users affected by this issue.,-1,11.912049,4.2767043,0,2026-02-09,17,78
+TKT-1024,2026-02-10 15:19:00,File upload takes forever for large files.,3,10.839922,4.358576,0,2026-02-10,15,42
+TKT-1025,2026-02-10 17:53:00,Payment processing stuck at 'pending' for 24 hours. Urgent - this is blocking our business operations.,9,5.3570914,1.922946,2,2026-02-10,17,102
+TKT-1026,2026-02-10 15:58:00,Mobile app freezes on Android 13.,-1,12.121215,4.538763,0,2026-02-10,15,33
+TKT-1027,2026-02-11 14:40:00,Cannot log into my account. Getting 'invalid credentials' error. Tried all troubleshooting steps already.,19,7.380431,3.9419534,-1,2026-02-11,14,105
+TKT-1028,2026-02-08 17:35:00,Login button not responding on mobile app.,16,12.612581,4.3185987,0,2026-02-08,17,42
+TKT-1029,2026-02-09 09:30:00,Missing data from yesterday's import.,8,10.906268,6.1783385,0,2026-02-09,9,37
+TKT-1030,2026-02-08 16:12:00,Subscription renewal failed. Account suspended.,14,3.9922493,6.0653625,-1,2026-02-08,16,47
+TKT-1031,2026-02-08 15:10:00,Export function generates corrupted PDF files. This has been happening for 3 days now.,2,14.063397,-4.1865087,-1,2026-02-08,15,86
+TKT-1032,2026-02-10 12:51:00,Notification emails contain broken links.,0,8.881456,2.0481746,3,2026-02-10,12,41
+TKT-1033,2026-02-08 17:43:00,Search results showing wrong data after last update.,7,10.378977,5.841835,0,2026-02-08,17,52
+TKT-1034,2026-02-09 11:42:00,Reports taking 10+ minutes to generate.,-1,11.3095455,5.539803,0,2026-02-09,11,39
+TKT-1035,2026-02-09 13:48:00,Requesting batch upload feature for multiple files.,3,10.703524,3.9722626,0,2026-02-09,13,51
+TKT-1036,2026-02-10 15:48:00,Refund not received after 5 business days. Multiple users affected by this issue.,10,17.20628,9.467704,1,2026-02-10,15,81
+TKT-1037,2026-02-12 11:09:00,Can I get a refund for unused months?,11,17.624454,8.881139,1,2026-02-12,11,37
+TKT-1038,2026-02-12 11:40:00,Please add support for SSO with Google Workspace.,5,11.306148,2.027274,0,2026-02-12,11,49
+TKT-1039,2026-02-09 10:05:00,Please add support for SSO with Google Workspace. Tried all troubleshooting steps already.,5,11.478666,2.2161756,0,2026-02-09,10,90
+TKT-1040,2026-02-11 13:26:00,Password reset not working. Link expired.,17,9.159325,2.425646,3,2026-02-11,13,41
+TKT-1041,2026-02-11 17:17:00,Refund not received after 5 business days.,10,17.408909,9.060461,1,2026-02-11,17,42
+TKT-1042,2026-02-08 14:49:00,Need API access for integration with our CRM.,-1,12.141386,6.092666,0,2026-02-08,14,45
+TKT-1043,2026-02-09 16:25:00,Cannot add new payment method. System keeps rejecting my card.,13,4.5225987,1.5150813,2,2026-02-09,16,62
+TKT-1044,2026-02-08 17:35:00,Cannot add new payment method. System keeps rejecting my card.,13,4.626147,1.6513699,2,2026-02-08,17,62
+TKT-1045,2026-02-12 12:39:00,Payment processing stuck at 'pending' for 24 hours. Urgent - this is blocking our business operations.,9,5.2635703,1.871623,2,2026-02-12,12,102
+TKT-1046,2026-02-11 09:49:00,Payment processing stuck at 'pending' for 24 hours.,9,5.178622,1.6902277,2,2026-02-11,9,51
+TKT-1047,2026-02-09 16:59:00,Can you add export to Excel functionality?,1,13.61589,-4.099251,-1,2026-02-09,16,42
+TKT-1048,2026-02-11 10:06:00,Payment failed with error code 402. Card was charged twice. Multiple users affected by this issue.,12,4.43536,2.0171115,2,2026-02-11,10,98
+TKT-1049,2026-02-09 12:37:00,Can I get a refund for unused months?,11,17.481932,8.979253,1,2026-02-09,12,37
+TKT-1050,2026-02-08 14:18:00,Need invoice for last 3 months for accounting.,-1,17.34283,8.410392,1,2026-02-08,14,46
+TKT-1051,2026-02-12 14:57:00,Cannot log into my account. Getting 'invalid credentials' error.,19,7.480533,4.032735,-1,2026-02-12,14,64
+TKT-1052,2026-02-08 12:38:00,Mobile app freezes on Android 13. Tried all troubleshooting steps already.,-1,12.035923,4.5201864,0,2026-02-08,12,74
+TKT-1053,2026-02-09 15:39:00,Login button not responding on mobile app.,16,12.703314,4.383988,0,2026-02-09,15,42
+TKT-1054,2026-02-08 10:51:00,API response time increased by 300% this week.,-1,11.705656,5.954967,0,2026-02-08,10,46
+TKT-1055,2026-02-10 12:19:00,How do I cancel my subscription?,15,4.226152,6.194975,-1,2026-02-10,12,32
+TKT-1056,2026-02-09 12:07:00,Cannot delete old records - getting permission error.,-1,7.58143,3.7646315,-1,2026-02-09,12,53
+TKT-1057,2026-02-12 13:43:00,Cannot log into my account. Getting 'invalid credentials' error.,19,7.4624987,3.789558,-1,2026-02-12,13,64
+TKT-1058,2026-02-10 15:36:00,Password reset not working. Link expired. Multiple users affected by this issue.,17,9.117495,2.0896015,3,2026-02-10,15,80
+TKT-1059,2026-02-08 15:57:00,Account locked after multiple login attempts. Tried all troubleshooting steps already.,18,8.3097105,3.7223341,-1,2026-02-08,15,86
+TKT-1060,2026-02-08 09:42:00,Password reset not working. Link expired.,17,9.070471,2.374824,3,2026-02-08,9,41
+TKT-1061,2026-02-11 10:23:00,Need API access for integration with our CRM.,-1,11.998641,5.958506,0,2026-02-11,10,45
+TKT-1062,2026-02-08 16:27:00,Login button not responding on mobile app. Please escalate to senior support.,16,12.494369,4.4614396,0,2026-02-08,16,77
+TKT-1063,2026-02-11 14:19:00,Refund not received after 5 business days.,10,17.484446,9.329512,1,2026-02-11,14,42
+TKT-1064,2026-02-11 12:31:00,Two-factor authentication code never arrives.,4,9.579115,1.9513352,3,2026-02-11,12,45
+TKT-1065,2026-02-08 16:51:00,Sync with third-party service stopped working. Multiple users affected by this issue.,-1,11.395558,4.0741343,0,2026-02-08,16,85
+TKT-1066,2026-02-11 11:20:00,Export function generates corrupted PDF files.,2,13.850704,-4.361322,-1,2026-02-11,11,46
+TKT-1067,2026-02-11 14:52:00,Password reset not working. Link expired.,17,9.278265,2.480161,3,2026-02-11,14,41
+TKT-1068,2026-02-08 10:24:00,Cannot log into my account. Getting 'invalid credentials' error.,19,7.4457545,4.0009356,-1,2026-02-08,10,64
+TKT-1069,2026-02-12 17:12:00,Subscription renewal failed. Account suspended.,14,4.2134333,6.14057,-1,2026-02-12,17,47
+TKT-1070,2026-02-09 09:28:00,Can I get a refund for unused months?,11,17.806377,9.134577,1,2026-02-09,9,37
+TKT-1071,2026-02-10 17:48:00,Payment failed with error code 402. Card was charged twice.,12,4.0503554,1.7209674,2,2026-02-10,17,59
+TKT-1072,2026-02-11 14:30:00,Can you add export to Excel functionality?,1,13.639036,-4.2138896,-1,2026-02-11,14,42
+TKT-1073,2026-02-08 09:53:00,Subscription renewal failed. Account suspended.,14,4.3626056,6.296593,-1,2026-02-08,9,47
+TKT-1074,2026-02-10 10:25:00,Cannot log into my account. Getting 'invalid credentials' error.,19,7.5285416,4.0041633,-1,2026-02-10,10,64
+TKT-1075,2026-02-08 17:24:00,Login button not responding on mobile app.,16,12.490189,4.1986265,0,2026-02-08,17,42
+TKT-1076,2026-02-12 12:34:00,Missing data from yesterday's import. Please escalate to senior support.,8,10.827021,6.087468,0,2026-02-12,12,72
+TKT-1077,2026-02-12 12:50:00,Search results showing wrong data after last update. This has been happening for 3 days now.,7,10.494467,5.741866,0,2026-02-12,12,92
+TKT-1078,2026-02-10 15:28:00,Password reset not working. Link expired.,17,9.060748,2.5036454,3,2026-02-10,15,41
+TKT-1079,2026-02-08 13:09:00,Two-factor authentication code never arrives.,4,9.418338,1.8716033,3,2026-02-08,13,45
+TKT-1080,2026-02-10 15:27:00,File upload takes forever for large files.,3,10.676814,4.5009685,0,2026-02-10,15,42
+TKT-1081,2026-02-10 15:54:00,Refund not received after 5 business days.,10,17.654566,9.27699,1,2026-02-10,15,42
+TKT-1082,2026-02-10 17:40:00,Search results showing wrong data after last update.,7,10.559319,5.7583046,0,2026-02-10,17,52
+TKT-1083,2026-02-09 16:04:00,Export function generates corrupted PDF files.,2,13.836201,-3.997377,-1,2026-02-09,16,46
+TKT-1084,2026-02-10 16:42:00,How do I cancel my subscription?,15,3.7684774,6.296295,-1,2026-02-10,16,32
+TKT-1085,2026-02-08 14:44:00,Please add support for SSO with Google Workspace.,5,11.423818,2.1421676,0,2026-02-08,14,49
+TKT-1086,2026-02-11 10:50:00,Refund not received after 5 business days.,10,17.607025,9.305795,1,2026-02-11,10,42
+TKT-1087,2026-02-11 11:17:00,Payment failed with error code 402. Card was charged twice.,12,4.059489,1.725694,2,2026-02-11,11,59
+TKT-1088,2026-02-12 16:51:00,Payment failed with error code 402. Card was charged twice. Tried all troubleshooting steps already.,12,4.3245525,2.0890353,2,2026-02-12,16,100
+TKT-1089,2026-02-12 10:08:00,Login button not responding on mobile app. This has been happening for 3 days now.,16,12.449224,4.101906,0,2026-02-12,10,82
+TKT-1090,2026-02-12 12:46:00,Requesting batch upload feature for multiple files. Tried all troubleshooting steps already.,3,10.601522,4.057965,0,2026-02-12,12,92
+TKT-1091,2026-02-09 14:45:00,Payment failed with error code 402. Card was charged twice. Multiple users affected by this issue.,12,4.3598094,2.1159017,2,2026-02-09,14,98
+TKT-1092,2026-02-08 09:59:00,Account locked after multiple login attempts. This has been happening for 3 days now.,18,8.60581,3.8233087,-1,2026-02-08,9,85
+TKT-1093,2026-02-09 11:14:00,Account locked after multiple login attempts.,18,8.126092,3.9575608,-1,2026-02-09,11,45
+TKT-1094,2026-02-08 10:20:00,Dashboard not loading - timeout error.,6,10.722333,5.021814,0,2026-02-08,10,38
+TKT-1095,2026-02-10 13:46:00,Website extremely slow during peak hours. Urgent - this is blocking our business operations.,9,5.664309,2.0987961,2,2026-02-10,13,92
+TKT-1096,2026-02-12 10:55:00,How do I cancel my subscription?,15,4.110575,6.117657,-1,2026-02-12,10,32
+TKT-1097,2026-02-10 10:05:00,Login button not responding on mobile app. Please escalate to senior support.,16,12.705478,4.421923,0,2026-02-10,10,77
+TKT-1098,2026-02-09 15:15:00,Export function generates corrupted PDF files.,2,14.007877,-4.3185277,-1,2026-02-09,15,46
+TKT-1099,2026-02-08 14:04:00,Dashboard crashes when filtering by date range. Multiple users affected by this issue.,6,10.809506,5.068874,0,2026-02-08,14,86
