@@ -97,6 +97,8 @@ python analyze_advanced.py
 
 ## How It Works
 
+![The Golden Pipeline: Optimizing Document Clustering](illustration.png)
+
 ### Step 1: Semantic Embeddings
 
 ```python
