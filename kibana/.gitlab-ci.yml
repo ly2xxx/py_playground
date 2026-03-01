@@ -1,0 +1,219 @@
+# GitLab CI/CD Pipeline for Kibana CSV Export Automation
+# =========================================================
+# This pipeline runs Playwright scripts to download CSV files from Kibana dashboards
+# Supports SSO authentication via stored cookies/session tokens
+
+stages:
+  - setup
+  - export
+  - notify
+
+variables:
+  # Playwright version to use
+  PLAYWRIGHT_VERSION: "v1.41.0-jammy"
+  # Download directory
+  DOWNLOAD_DIR: "downloads"
+  # Script to run
+  SCRIPT_NAME: "kibana_csv_keyboard.py"
+
+# ==================== SETUP STAGE ====================
+# Optional: Validate environment and credentials
+validate_secrets:
+  stage: setup
+  image: python:3.11-slim
+  script:
+    - echo "Validating environment variables..."
+    - |
+      if [ -z "$KIBANA_SESSION_COOKIE" ]; then
+        echo "ERROR: KIBANA_SESSION_COOKIE is not set!"
+        echo "Please configure it in GitLab CI/CD Settings > Variables"
+        exit 1
+      fi
+    - echo "All required secrets are configured"
+  only:
+    - schedules
+    - web
+  allow_failure: false
+
+# ==================== EXPORT STAGE ====================
+kibana_csv_export:
+  stage: export
+  # Use official Playwright Docker image (includes all browsers)
+  image: mcr.microsoft.com/playwright/python:${PLAYWRIGHT_VERSION}
+  
+  before_script:
+    - echo "Python version:"
+    - python --version
+    - echo "Installing dependencies..."
+    - pip install --upgrade pip
+    - pip install playwright python-dotenv
+    - echo "Playwright version:"
+    - playwright --version
+    # Browsers are pre-installed in this image, but verify
+    - echo "Browsers available in image"
+  
+  script:
+    - echo "Starting Kibana CSV export automation..."
+    - echo "Creating download directory..."
+    - mkdir -p ${DOWNLOAD_DIR}
+    
+    # Write session cookies to a file for Playwright to load
+    - echo "Setting up authentication cookies..."
+    - |
+      cat > cookies.json <<EOF
+      {
+        "cookies": [
+          {
+            "name": "sid",
+            "value": "$KIBANA_SESSION_COOKIE",
+            "domain": ".your-kibana-domain.com",
+            "path": "/",
+            "httpOnly": true,
+            "secure": true,
+            "sameSite": "Lax"
+          }
+        ]
+      }
+      EOF
+    
+    - echo "Running Playwright script..."
+    - python ${SCRIPT_NAME}
+    
+    - echo "Verifying downloaded files..."
+    - ls -lh ${DOWNLOAD_DIR}/
+    - |
+      if [ -z "$(ls -A ${DOWNLOAD_DIR})" ]; then
+        echo "ERROR: No files downloaded!"
+        exit 1
+      fi
+    - echo "Export complete!"
+  
+  # Save downloaded CSV files as artifacts
+  artifacts:
+    name: "kibana-csv-export-$CI_COMMIT_SHORT_SHA"
+    paths:
+      - ${DOWNLOAD_DIR}/*.csv
+      - ${DOWNLOAD_DIR}/*.png  # Include screenshots if any
+    expire_in: 7 days
+    reports:
+      # Optional: Generate a report for GitLab
+      dotenv: build.env
+  
+  # When to run this job
+  only:
+    - schedules    # Run on scheduled pipelines
+    - web          # Allow manual triggering
+    - main         # Or run on main branch commits
+  
+  # Retry on failure (network issues, etc.)
+  retry:
+    max: 2
+    when:
+      - runner_system_failure
+      - stuck_or_timeout_failure
+  
+  # Timeout after 10 minutes
+  timeout: 10m
+  
+  # Tag to select specific runner (optional)
+  # tags:
+  #   - docker
+
+# ==================== NOTIFICATION STAGE ====================
+# Optional: Send notification on success/failure
+notify_success:
+  stage: notify
+  image: curlimages/curl:latest
+  script:
+    - echo "CSV export completed successfully"
+    # Example: Send Slack notification
+    # - |
+    #   curl -X POST -H 'Content-type: application/json' \
+    #   --data '{"text":"Kibana CSV export completed! View artifacts at: '"$CI_PROJECT_URL"'/-/jobs/'"$CI_JOB_ID"'/artifacts"}' \
+    #   $SLACK_WEBHOOK_URL
+    
+    # Example: Send email via API
+    # - |
+    #   curl -X POST https://api.sendgrid.com/v3/mail/send \
+    #   -H "Authorization: Bearer $SENDGRID_API_KEY" \
+    #   -H "Content-Type: application/json" \
+    #   -d '{"personalizations":[{"to":[{"email":"your-email@company.com"}]}],"from":{"email":"noreply@company.com"},"subject":"Kibana Export Success","content":[{"type":"text/plain","value":"CSV export completed successfully"}]}'
+  
+  when: on_success
+  only:
+    - schedules
+
+notify_failure:
+  stage: notify
+  image: curlimages/curl:latest
+  script:
+    - echo "CSV export FAILED"
+    # Send failure notification
+    # - |
+    #   curl -X POST -H 'Content-type: application/json' \
+    #   --data '{"text":"Kibana CSV export FAILED! Check logs at: '"$CI_PROJECT_URL"'/-/jobs/'"$CI_JOB_ID"'"}' \
+    #   $SLACK_WEBHOOK_URL
+  
+  when: on_failure
+  only:
+    - schedules
+
+# ==================== ALTERNATIVE: Multiple Dashboards ====================
+# If you need to export from multiple dashboards, use matrix or parallel jobs
+.export_template: &export_template
+  stage: export
+  image: mcr.microsoft.com/playwright/python:${PLAYWRIGHT_VERSION}
+  before_script:
+    - pip install playwright python-dotenv
+  script:
+    - mkdir -p ${DOWNLOAD_DIR}
+    - python ${SCRIPT_NAME}
+  artifacts:
+    paths:
+      - ${DOWNLOAD_DIR}/*.csv
+    expire_in: 7 days
+
+# Example: Export from multiple environments
+export_prod:
+  <<: *export_template
+  variables:
+    KIBANA_URL: "https://kibana.prod.company.com"
+    SCRIPT_NAME: "kibana_csv_keyboard.py"
+  only:
+    - schedules
+
+export_staging:
+  <<: *export_template
+  variables:
+    KIBANA_URL: "https://kibana.staging.company.com"
+    SCRIPT_NAME: "kibana_csv_keyboard.py"
+  only:
+    - schedules
+
+# ==================== SCHEDULE CONFIGURATION ====================
+# To set up scheduled pipeline:
+# 1. Go to GitLab: CI/CD > Schedules
+# 2. Click "New schedule"
+# 3. Set interval (e.g., "0 9 * * *" for daily at 9am)
+# 4. Target branch: main
+# 5. Variables (optional):
+#    - KIBANA_URL: Override default URL
+#    - SCRIPT_NAME: Override default script
+
+# ==================== REQUIRED CI/CD VARIABLES ====================
+# Configure these in GitLab: Settings > CI/CD > Variables
+#
+# REQUIRED:
+# - KIBANA_SESSION_COOKIE: Session cookie value from authenticated browser session
+#
+# OPTIONAL:
+# - KIBANA_URL: Override Kibana URL
+# - KIBANA_USERNAME: If using basic auth instead of SSO
+# - KIBANA_PASSWORD: If using basic auth instead of SSO
+# - SLACK_WEBHOOK_URL: For Slack notifications
+# - SENDGRID_API_KEY: For email notifications
+#
+# Cookie variables should be:
+# - Type: Variable (not File)
+# - Protected: Yes (if running on protected branches)
+# - Masked: Yes (to hide in logs)

@@ -166,3 +166,5 @@ cython_debug/
 
 #outcome
 results/
+
+.vscode
