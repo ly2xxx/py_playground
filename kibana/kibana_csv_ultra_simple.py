@@ -61,6 +61,52 @@ def download_kibana_csv():
             page.screenshot(path="error_services.png")
             print("Screenshot saved: error_services.png")
             # Don't return, maybe we are already there?
+            
+        # Select Namespaces
+        print("🔍 Selecting Namespace 'green', 'observe-green', 'blue'...")
+        try:
+            # The button has aria-label="Namespace Name"
+            namespace_btn = page.locator('button[aria-label="Namespace Name"]')
+            if namespace_btn.count() > 0:
+                namespace_btn.first.scroll_into_view_if_needed()
+                namespace_btn.first.click()
+                print("   Opened Namespace Name dropdown")
+                time.sleep(1.5)
+                
+                # We can find the search input "Starts with..."
+                search_input = page.get_by_placeholder("Starts with...", exact=False).first
+                
+                for option in ["green", "observe-green", "blue"]:
+                    print(f"   Selecting '{option}'...")
+                    if search_input.is_visible():
+                        search_input.fill(option)
+                        time.sleep(1) # wait for list to filter
+                        
+                    # Find exact text in the UI. Popovers are appended to body, so last() usually hits the popover element.
+                    try:
+                        option_el = page.get_by_text(option, exact=True).last
+                        option_el.click(timeout=3000)
+                        print(f"   ✅ Clicked '{option}'")
+                    except Exception as ex:
+                        print(f"   ❌ Could not find/click exact text '{option}': {ex}")
+                    
+                    time.sleep(1)
+                    
+                    if search_input.is_visible():
+                        search_input.fill("") # clear for next
+                        time.sleep(0.5)
+                        
+                # Close the dropdown
+                page.keyboard.press("Escape")
+                print("✅ Namespaces selected")
+                time.sleep(5)  # allow dashboard to refresh after changing filters
+                
+            else:
+                print("❌ 'Namespace Name' button not found.")
+                page.screenshot(path="error_namespace.png")
+        except Exception as e:
+            print(f"❌ Failed to select namespace: {e}")
+            page.screenshot(path="error_namespace_exception.png")
         
         # Click Download CSV
         print("🔍 Finding 'Service Information' panel...")
